@@ -36,13 +36,13 @@ def minChar(n,s):
 	if n >= 8 and newNumbers == 0:
 		print("Strong Password, Good to Go!")
 	elif n>=8:
-		print(newNumbers," more characters should be added.")
+		print(newNumbers,"more characters should be added.")
 	else:
 		total = n+newNumbers
-		if total<8:
-			print(total+(8-total), " more characters should be added.")
+		if total>=8:
+			print(newNumbers, "more characters should be added.")
 		else:
-			print(total, " more characters should be added.")
+			print(8-n, "more characters should be added.")
 
 n = int(input())
 s = input()
